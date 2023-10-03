@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Concert One', cursive;
+    /* overflow-y: hidden; */
+    box-sizing: border-box;
+}
+
+.sub-Container{ 
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.sub-Container .overlay{
+    z-index: 223;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+background-color: #1a2323b6;
+}
+
+.open .container{
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+    /* justify-content: center; */
+    position: absolute;
+    height: 70vh;
+    width: 70vw;
+    left: 15vw;
+    top: -10;
+    transition: 1s ease;
+    /* transform: translateY(20%); */
+    z-index: 6666;
+    background-image: url(./imgs/de3d14f4-0f0c-4362-874f-9e7ec1ecd5a5.jpg);
+}
+.open .container .content{
+    background-color: rgba(250, 235, 215, 0.461);
+position: relative;
+display: flex;
+    flex-direction: column;
+    background-position: center;
+    margin: 10rem auto;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+.open .container .content .leftimg img{
+position: absolute;
+bottom: -3rem;
+left: -5rem;
+height: 20rem;
+}
+.open .container .content h1:not(.play){
+    font-size: 3rem;
+    z-index: 3;
+    color: #0d7210;
+    text-shadow: 6px 2px 5px #ff1797d2;
+}
+ .play{
+    cursor: pointer;
+    animation: play infinite;
+    animation-duration: 4s;
+    height: 4rem;
+    width: 20rem;
+    text-align: center;
+    margin-top: 2rem;
+    color:#fff700;
+    padding-bottom: 3rem;
+    text-shadow: 6px 2px 5px #ff1797d2;
+
+}
+@keyframes play {
+    from{
+        opacity: 0;
+        transform: scale(1);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+img{
+    z-index: 2;
+    object-fit: cover;
+    object-position: center;
+}
+.frame img{
+    z-index: 1;
+height:     100vh;
+width: 100vw;
+top: 0rem;
+right: 0rem;
+position: absolute;
+}
+.bottom-left img{
+    position: absolute;
+    top: 12rem;
+    left: 5rem;
+    height: 35rem;
+}
+.right img{
+    position: absolute;
+    height: 20rem;
+    right: 0rem;
+}
+.left img{
+    height: 10rem;
+    position: absolute;
+    left: 0rem;
+}
+.main-container{
+    overflow: hidden;
+    /* background-image: url("./Downlaod-Colorful-Bubbles-Wallpaper.jpg"); */
+    background-color:rgba(255, 4, 125, 0.322) ;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.bottom-right img{
+    height: 35rem;
+    position: absolute;
+    top: 9rem;
+    right: 0rem;
+}
+.main-container .bubble-header{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 8rem;
+    width: 50%;
+    margin:0 auto 1rem  auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 25, 201, 0.317);
+}
+.wd h1{
+    font-weight: 200;
+    font-size: 1.5rem;
+    color:#00ff37;
+    text-shadow: 6px 2px 5px #ff1797d2;
+}
+.wd .wi{
+    font-size: 2rem;
+    color: #ff008c;
+    text-shadow: 1px 2px 2px #00ff37;
+}
+.wd{
+    z-index: 6;
+    width: 5rem;
+}
+.hit img{
+    height: 3rem;
+}
+.score img{
+    height: 4rem;
+}
+.timer img{
+    height: 4rem;
+}
+.hit-no, .score-no {
+    transition: 1s;
+    transform: scale(2);
+}
+.timmer-ani{
+    animation: tm infinite;
+    animation-duration: 1s;
+}
+@keyframes tm {
+    from{
+transform: scale(1)
+    }
+    to{
+        transform: scale(2)
+    }
+}
+.sub-Container {
+    color: green;
+    height: 60%;
+    text-align: center;
+}
+
+.bubble-body{
+    z-index:2;
+/* background-color: aquamarine; */
+/* background-image: url("./Downlaod-Colorful-Bubbles-Wallpaper.jpg"); */
+/* height: 70vh; */
+display: flex;
+width: 50vw;
+margin: auto;
+align-items: center;
+flex-wrap: wrap;
+background-position: center;
+
+    /* animation: bb infinite linear;
+    animation-duration: 4s; */
+
+background-size: cover;
+}
+.bubble-body .bb:hover{
+    box-shadow: none;
+   transform:  scale(1.1);
+   color: rgba(255, 255, 255, 0);
+background-color: rgba(255, 222, 173, 0);
+transform: translateY(-10%);
+}
+.bubble-body .bb{
+    transition: .3s linear;
+    z-index: 22;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 20px 20px 20px black;
+    background-position: center;
+background-size: cover;
+background-image: url(./imgs/pngwing.com.png);
+/* background-image: url(./png-transparent-teddy-bear-gummy-bear-snout-gummy-bear-pink-thumbnail.png); */
+    /* text-shadow:5px 10px 10px 100px solid black; */
+       /* transition: .4s ease; */
+    padding: 9px;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 25%;
+    margin: 4px;
+    cursor: pointer; 
+    /* box-shadow: #0b0010 1px -20px 18px 2px inset, #befff2c4 0px -36px 41px 0px inset, #37ffb3eb 0px -78px 40px 0px inset, #9082b4f2 -1px 4px 15px, white 0px 1px 5px, #100e0e36 -5px 8px 4px, 0px 16px 8px, 0px 30px 12px; */
+    /* animation: bb infinite; */
+  background-color:rgba(255, 7, 201, 0.596);
+box-shadow:  red 5px -16px 10px 0px inset, white 20px -3px 10px 0px inset,rgba(0, 0, 0, 0.564)0px 0px 20px, 10px 10px 10px, -1px 20px 10px
+    /* transition: .3s ese; */
+    /* box-shadow: green 0px -20px 18px 2px inset, white 0px -36px 41px 0px inset, white 0px -78px 40px 0px inset, rgba(60, 255, 6, 0.06) 0px 2px 1px, rgba(1, 121, 31, 0.893) 0px 4px 2px, rgba(3, 77, 15, 0)0px 8px 4px, 0px 16px 8px, 0px 32px 16px */
+
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0) 0px 8px 4px, rgba(131, 123, 123, 0.062) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    /* box-shadow: 0px -23px 25px 0px rgba(0, 0, 0, 0.17) inset, 0px -36px 30px 0px rgba(0, 0, 0, 0.15) inset, 0px -79px 40px 0px rgba(0, 0, 0, 0.1) inset, 0px 2px 1px rgba(0, 0, 0, 0.06), 0px 4px 2px rgba(0, 0, 0, 0.09), 0px 8px 4px rgba(0, 0, 0, 0.09), 0px 16px 8px rgba(0, 0, 0, 0.09); */
+}
+@keyframes bb {
+   10%{
+  background-color: rgb(255, 0, 140);
+   } 
+   20%{
+    background-color: rgb(235, 0, 129);
+}
+30%{
+    background-color: rgb(212, 0, 117);
+}
+40%{
+    background-color: rgb(192, 0, 106);
+}
+50%{
+    background-color: rgb(207, 20, 123);
+
+}
+60%{
+    background-color: rgb(154, 0, 84);
+}
+70%{
+    background-color: rgb(183, 40, 119);
+}
+80%{
+    background-color: rgb(179, 69, 129);
+}
+90%{
+    background-color: rgb(236, 49, 152);
+}
+100%{
+    background-color: rgb(254, 72, 172);
+
+}
+}
+.clut{
+overflow: hidden;
+}
+.sub-Container .container{
+    /* background-color: brown; */
+    color: antiquewhite;
+    width: 50vw;
+    height: 50vh;
+    margin: 15vh auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(222, 0, 0);
+    justify-content: center;
+    transform: scale(2);
+}
+.container-animate{
+    border-radius: 1rem;
+    background-image: url(./imgs/de3d14f4-0f0c-4362-874f-9e7ec1ecd5a5.jpg);
+    background-position: center;
+    background-size: cover;
+    /* transform: scale(1); */
+    position: absolute;
+    top:4rem;
+    z-index: 888;
+    width: 50%;
+    left: 24rem;
+    right: 24rem;
+    height: 80vh;
+}
+.sub{
+    justify-content: center;
+    display: flex;
+    background-color: rgba(255, 25, 201, 0.317);
+    flex-direction: column;
+    /* padding: 10rem 0; */
+    width: 80%;
+    margin:16rem auto 5rem auto;
+    align-items: center;
+    height: 15rem;
+
+}
+
+/* @keyframes an {
+    from{
+transition: 10s ease;
+transform: scale(0);
+    }
+    to{
+transition: 10s ease;
+
+        transform: scale(3);
+    }
+} */
+
+@keyframes an{
+    from {transform: scale(2)}
+    to {transform: scale(1)}
+  }
+.playAgain{
+    font-size: 3rem;
+    cursor: pointer;
+}
+.Fscore, .Fhits{
+font-size: 2rem;
+color: rgb(102, 255, 0);
+text-shadow: 6px 2px 5px #ff1797d2;
+}
+.ff span{
+    font-size: 3rem;
+}
+.pLeft img{
+    margin-top: 4rem;
+    height: 11rem;
+    position: absolute;
+}
+.playAgain {
+    font-size: 2rem;
+}
+.Fscore, .Fhits {margin-top: 0rem;
+}
+
+.play {
+    margin-top: 1rem;
+    z-index: 4;
+}
+.ovr{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #1a2323b6;
+    z-index: 7;
+
+}
+
+@media (min-width: 250px) and (max-width: 450px) {
+        .frame img {
+        transform: rotate(90deg);
+        z-index: 1;
+        height: unset;
+        width: 200vw;
+        top: 10.8rem;
+        right: -14rem;}
+    .play {
+        font-size: 2.4rem;
+    }
+    .open .container {
+        height: 100vh;
+width: 100vw;
+left: 0;
+top:0;
+transform: translateY(0%);
+overflow: hidden;
+    }
+    .open .container .content{
+        width: 100%;
+height: 50%;
+justify-content: center;
+text-align: center;
+margin: 40% auto;
+    }
+    .open .container .content .leftimg img{
+        bottom: 3rem;
+        left: 0rem;
+        height: 12rem;
+    }
+    .sub-Container {
+height: 100%;
+    }
+    .bottom-left img {
+        position: absolute;
+        top: 15rem;
+        left: 18rem;
+        height: 15rem;
+      }
+      .bottom-right {
+        height: 35rem;
+        position: absolute;
+        top: 9rem;
+        right: -4rem;
+        overflow: hidden;
+      }
+      .main-container{
+        overflow: hidden;
+      }
+      .main-container .bubble-header{
+        width: 90%;
+        height: 10rem;
+        margin-top: 1rem;
+      }
+      .hit img {
+        height: 2.5rem;
+    }
+    .timer img {
+        height: 3rem;
+    }.score img {
+        height: 3rem;
+    }.wd .wi {
+        font-size: 1.8rem;}
+      .bubble-body {
+        width: 90%;
+        overflow: hidden;
+      }
+      .right img {display: none;}
+      .left img {display: none;}
+      .container-animate {
+        top: 0;
+/* z-index: 888; */
+width: 100%;
+left: 0;
+right: 0;
+height: 100%;
+      }
+      .sub-Container {overflow: hidden};
+      .pLeft img {
+        height: 15rem;
+        top: 2rem;
+        left: 0;
+        right: 0;
+      }
+      .sub {
+        width: 90%;
+margin: 21rem auto 5rem auto;
+align-items: center;
+height: 12rem;
+justify-content: center;
+overflow: hidden;
+      }
+      .Fscore, .Fhits {font-size: 1.8;}
+      .bubble-body .bb{width: 2.8rem;
+        height: 2.8rem;
+        font-size: 1.4rem;
+    }
+    .wd h1 {
+        margin-bottom: .5rem;}
+        .bubble-header {
+            /* margin-top: 2rem; */
+            height: 10.5rem;
+        }
+
+}
+@media (min-width: 451px) and (max-width: 650px) {
+    .open .container {
+        width: 100%;
+        height: 100%;
+    left: 0%;
+    top:0;
+    transform: translate(0%);
+    } 
+    .open .container .content {
+        width: 90%;
+    height: 40%;
+    justify-content: center;
+    text-align: center;
+    margin: 40% auto;
+    }
+    .open .container .content .leftimg img {
+        bottom: 0rem;
+        left: -1rem;
+        height: 12rem;
+    }
+        .open .container .content h1:not(.play) {
+            font-size: 4rem;}
+            .play {
+                font-size: 3rem;
+            }
+            .main-container .bubble-header {
+                height: 6rem;
+                width: 80%;
+                margin: 1rem auto;
+            }
+            .left img {
+                left: -4rem;
+                top: 6rem;}
+                .wd .wi {
+                    font-size: 1.5rem;}
+                    .wd h1 {
+                        font-size: 1.2rem;}
+                        .right img {
+                            right: -4rem;
+                            top: 12rem;
+                        }
+                        .bottom-left img {
+                            top: 18rem;
+                            left: -1rem;
+                            height: 25rem;
+                        }
+                        .container-animate {
+                            top:0%;
+                            height: 100%;
+                            width: 100%;
+                            left: 0%;
+                        }
+                        .bubble-body{
+                            width: 80%;
+                        }
+}
+@media (min-width: 651px) and (max-width: 850px) {
+    .open .container {
+        width: 100%;
+        height: 100%;
+    left: 0%;
+    top:0;
+    transform: translate(0%);
+    } 
+    .open .container .content {
+        margin: 14% auto;
+        width: 80%;
+        height: 50%;
+    }
+    .bubble-body{
+        width: 70%;
+    }
+    .wd h1{
+        font-size: 1.2rem;
+    }
+    .wd .wi {
+        font-size: 1.5rem}
+    .open .container .content h1:not(.play) {
+        font-size: 4rem;
+        width: 70%;
+    }
+    .main-container .bubble-header {margin: 1rem auto;}
+    .open .container .content .leftimg img {
+        bottom: 4rem;
+        left: -5rem;
+        height: 23rem;
+    }
+    .right img {
+        right: -4rem;
+    }
+    .bottom-right img {
+        height: 30rem;
+        top: 17rem;
+        right: -7rem;
+    }
+    .bottom-left img {
+        left: -2rem;}
+    .play{
+        font-size: 3rem;
+    }
+    .container-animate { width: 100%;
+        top:0;
+        left: 0;
+        height: 100%;
+    }
+    .pLeft img {
+        left: 32%;}
+        
+}
+@media (min-width: 851px) {
+    .open .container{
+        width: 80%;
+        left: 10vw;
+        top: 5rem;
+        height: 80vh;
+    }
+    .open .container .content{
+        margin: 19% auto;
+    height: 40%;
+    width: 80%;
+    }
+    .open .container .content .leftimg img {
+        bottom: 1rem;
+        left: -4rem;}
+    .bubble-body{
+        width: 70%;
+    }
+    .bottom-left img {
+        left: -2rem;}
+        .right img {
+            right: -3rem;
+            top:-2rem
+        }
+        .bottom-right img {
+            height: 30rem;
+            top: 16rem;
+            right: -5rem;}
+            .frame img {
+                z-index: 1;
+                height: 55vh;
+                width: 100vw;}
+                .main-container .bubble-header {
+                    margin: 1rem auto;}
+                    .container-animate {
+                        width: 80%;
+        left: 10%;
+        top: 5rem;
+        height: 80vh;}
+        .pLeft img {
+            height: 12rem;
+            left: 35%;}
+}
+@media (max-width: 1250px) {
+    
+}
